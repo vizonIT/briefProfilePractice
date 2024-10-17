@@ -7,6 +7,10 @@ body {
   justify-content: center;
   background-color: grey;
 }
+
+.container {
+  margin: 2em;
+}
 .contentwrap {
   display: flex;
   justify-content: center;
@@ -31,11 +35,13 @@ nav a {
   background-color: rgb(179, 79, 79);
   padding: 2px 15px 2px 15px;
   border-radius: 6px;
+
+  &:hover {
+    color: rgb(80, 160, 80);
+    background-color: rgb(232, 236, 210);
+  }
 }
-nav a:hover {
-  color: aquamarine;
-  background-color: rgb(232, 236, 210);
-}
+
 h2 {
   color: rgb(218, 194, 163);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -50,7 +56,17 @@ h2 {
   border-radius: 10px 0 0 10px;
   border: 2px solid rgb(236, 233, 233);
 }
-#aboutMe {
+
+.current {
+  background-color: rgb(80, 160, 80);
+  border: 1.5px solid red;
+
+  &:hover {
+    border: 0;
+  }
+}
+.aboutMe p {
+  padding: 8px;
 }
 h3 {
   color: red;
@@ -73,17 +89,21 @@ footer {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px rgb(92, 91, 91);
+
+  &:hover {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px red;
+  }
 }
+
 .call-In h2 {
   margin: 1px;
+  color: rgb(80, 160, 80);
 }
+
 .call-In p {
   font-size: 18px;
   font-weight: 400;
-}
-.call-In:hover {
-  background-color: whitesmoke;
-  box-shadow: 2px 2px red;
 }
 
 #condition {
